@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Simulador_de_Seguros_1_0.Master.Site" %>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="~/CSS/Style.css" />
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <h1>Simulador de Seguros 1.0</h1>
+                <nav>
+                    <!-- local para links de navegação, caso tivesse sido solicitado -->
+                </nav>
+            </header>
+            <main>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </main>
+            <footer>
+                <p>&copy; 2024 Simulador de Seguros. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
+
+
